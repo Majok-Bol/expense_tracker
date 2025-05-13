@@ -18,31 +18,27 @@ class HomePage extends StatelessWidget {
         label: Text('Add new expense'),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.grey.shade100,
+        onTap: (value) {},
+        selectedFontSize: 15,
+        unselectedFontSize: 15,
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.blue.shade500,
         items: [
           BottomNavigationBarItem(
+            backgroundColor: Colors.pink,
+            tooltip: 'List',
             label: 'List',
-            icon: IconButton(
-              tooltip: 'List',
-              onPressed: () {},
-              icon: Icon(Icons.list),
-            ),
+            icon: Icon(Icons.list),
           ),
           BottomNavigationBarItem(
+            tooltip: 'Settings',
             label: 'Settings',
-            icon: IconButton(
-              tooltip: 'Settings',
-              onPressed: () {},
-              icon: Icon(Icons.settings),
-            ),
+            icon: Icon(Icons.settings),
           ),
           BottomNavigationBarItem(
+            tooltip: 'Summary',
             label: 'Summary',
-            icon: IconButton(
-              tooltip: 'Summary',
-              onPressed: () {},
-              icon: Icon(Icons.summarize),
-            ),
+            icon: Icon(Icons.summarize),
           ),
         ],
       ),
